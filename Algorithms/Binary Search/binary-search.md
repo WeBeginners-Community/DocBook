@@ -33,6 +33,5 @@ Let x = 4 be the element to be searched.
 8. x = 4 is found.
 ![6](https://cdn.programiz.com/sites/tutorial2program/files/binary-search-found.png)
 
-Implementation of both Iterative and Recursion Approaches have been given in Python Language in the files.
 
 
