@@ -23,5 +23,13 @@ Compare minimum with the third element. Again, if the third element is smaller, 
 ![6](https://www.programiz.com/sites/tutorial2program/files/Selection-sort-2.png)
 ![7](https://www.programiz.com/sites/tutorial2program/files/Selection-sort-3_1.png)
 
-Selection Sort Code for Python given in the Python file.
+##Pseudo Code
+selectionSort(array, size)
+  repeat (size - 1) times
+  set the first unsorted element as the minimum
+  for each of the unsorted elements
+    if element < currentMinimum
+      set element as new minimum
+  swap minimum with first unsorted position
+end selectionSort
 
