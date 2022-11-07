@@ -73,7 +73,7 @@ Once the issue is assigned to you, you can start working on it.
     Now, you'll have to commit those changes to the repository. 
     Do remember to add a title and description for changes you have made.
 
-
+    ![10](push-1.png)
     After this you'll have to push these changes to origin.
 
     Note: These changes are going to be pushed to your forked repository.
@@ -82,6 +82,9 @@ Once the issue is assigned to you, you can start working on it.
     Now you'll have to go the GitHub website. 
     In your forked repository, it will be showing that this repository is 'some number' commits ahead of the main repository, means that all the changes you committed are now shown in your forked repository and you are ready to send these changes to the main repository.
     In your forked repository, you'll have to go to the pull request tab and create a new pull request. There you will have to add the title and description of the changes you made and submit the pull request.
+    ![12](pr-1.png)
+    ![13](pr-2.png)
+    ![14](pr-3.png)
 
     You just made your first pull request!
 
@@ -91,7 +94,7 @@ Once the issue is assigned to you, you can start working on it.
 
 2.  Always keep your forked repository updated.
     Always remember to pull the origin before starting to work on your changes.
-    ![10](fetch-1.png)
+    ![11](fetch-1.png)
 
 3. Remember to attach a screenshot of the changes you have made while creating a pull request for the ease of maintainer.
    
