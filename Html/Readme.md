@@ -39,6 +39,7 @@ so we can understand
 2. A tag opened must be closed unless not required . eg: we saw that title tag must be closed but img tag doesn't require a closing tag.
 3. Wrap and indent the tags properly. The tag that open first closes last. Follwing is an example of a mistake.
 ![3](wrong1.jpg)
+
 :exclamation: In this HTML tag cannot close before head tag closes as HTML tag opens before haed tag
 
 ## Basic HTML Structure
