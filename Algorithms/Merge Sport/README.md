@@ -5,9 +5,7 @@
 Merge sort is the sorting technique that follows the divide and conquer approach. Merge sort is similar to the quick sort algorithm as it uses 
 the divide and conquer approach to sort the elements. It is one of the most popular and efficient sorting algorithm. 
 
-It divides the given list into two equal halves, calls itself for the two halves and then merges the two sorted halves. 
-
-We have to define the merge() function to perform the merging.
+It divides the given list into two equal halves, calls the function merge sort for the two halves and then merges the two sorted halves. 
 
 The sub-lists are divided again and again into halves until the list cannot be divided further. 
 
@@ -15,11 +13,13 @@ Then we combine the pair of one element lists into two-element lists, sorting th
 
 The sorted two-element pairs is merged into the four-element lists, and so on until we get the sorted list.
 
+We have to define the merge() function to perform the merging.
+
 The Time Complexity of Merge Sort is O(nlogn)
 
 ### ALGORITHM EXPLAINED ###
 
-So we have an unsorted array which containes 8 elements: [12,31,25,832,17,40,42]
+So we have an unsorted array which containes 8 elements: [12,31,25,8,32,17,40,42]
 
 ![Screenshot (380) 1](https://user-images.githubusercontent.com/98229024/200805936-ea5e389c-688b-4576-aab9-54e77fe2b4b2.png)
 
