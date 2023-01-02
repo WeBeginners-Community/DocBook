@@ -49,13 +49,12 @@ In each iteration, the comparison takes place up to the last unsorted element.
             
         end for
         
-        /*if no number was swapped that means 
-        array is sorted now, break the loop.*/
-        
-        if(not swapped) then
-            break
-        end if
-        
     end for
     
     end procedure return list
+
+
+## Time Complexity
+i. Best Case: O(n)
+ii. Worst Case: O(n^2)
+iii. Average Case: O(n^2)
