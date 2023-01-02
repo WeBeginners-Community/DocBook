@@ -14,38 +14,40 @@ Suppose we need to sort the following array.
 
 ### Insertion Sort Steps
 Initial array
-1. The first element in the array is assumed to be sorted. Take the second element and store it separately in key.
+1.  The first element in the array is assumed to be sorted. Take the second element and store it separately in key.
 
-Compare key with the first element. If the first element is greater than key, then key is placed in front of the first element.
-![1](https://www.programiz.com/sites/tutorial2program/files/Insertion-sort-0_1.png)
-
-
-If the first element is greater than key, then key is placed in front of the first element.
-
-2. Now, the first two elements are sorted.
-Take the third element and compare it with the elements on the left of it. Placed it just behind the element smaller than it. If there is no element smaller than it, then place it at the beginning of the array.
-![2](https://www.programiz.com/sites/tutorial2program/files/Insertion-sort-1_1.png)
+    Compare key with the first element. If the first element is greater than key, then key is placed in front of the first element.
+    ![1](https://www.programiz.com/sites/tutorial2program/files/Insertion-sort-0_1.png)
 
 
-Place 1 at the beginning
+    If the first element is greater than key, then key is placed in front of the first element.
 
-3. Similarly, place every unsorted element at its correct position.
-![3](https://www.programiz.com/sites/tutorial2program/files/Insertion-sort-2_2.png)
-Place 4 behind 1
+2.  Now, the first two elements are sorted.
+    Take the third element and compare it with the elements on the left of it. Placed it just behind the element smaller than it. If there is no element smaller than it, then place it at the beginning of the array.
+    ![2](https://www.programiz.com/sites/tutorial2program/files/Insertion-sort-1_1.png)
 
 
-![4](https://www.programiz.com/sites/tutorial2program/files/Insertion-sort-3_2.png)
-Place 3 behind 1 and the array is sorted
+    Place 1 at the beginning
+
+3.  Similarly, place every unsorted element at its correct position.
+    ![3](https://www.programiz.com/sites/tutorial2program/files/Insertion-sort-2_2.png)
+    Place 4 behind 1
+
+
+    ![4](https://www.programiz.com/sites/tutorial2program/files/Insertion-sort-3_2.png)
+    Place 3 behind 1 and the array is sorted
 
 
 
 ## Insertion Sort Complexity
+<pre>
 Time                Complexity	 
 Best	                O(n)
 Worst	                O(n2)
 Average	                O(n2)
 Space Complexity    	O(1)
 Stability	            Yes
+</pre>
 
 ## Time Complexities
 
