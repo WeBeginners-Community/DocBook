@@ -56,5 +56,7 @@ In each iteration, the comparison takes place up to the last unsorted element.
 
 ## Time Complexity
 i. Best Case: O(n)
+
 ii. Worst Case: O(n^2)
+
 iii. Average Case: O(n^2)
