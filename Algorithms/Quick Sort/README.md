@@ -1,7 +1,11 @@
 # Quick Sort
 Quick Sort is a sorting algorithm based on the divide and conquer algorithm. We first initialize a pivot value and place it in its correct position in the array, such that all elements (unsorted or sorted) less than the pivot are placed on the left-hand side and the elements greater than or equal to the pivot are placed on the right-hand side of the pivot.
 
-**Time Complexity:**  O(n^2) (Worst Case)
+**Time Complexity:**  
+
+1.  O(n^2) (Worst Case)
+2.  O(n*logn) (Average Case)
+3.  O(n*logn) (Best Case)
 
 The 2 subarrays created, are then recursively sorted.
 
@@ -12,7 +16,7 @@ The 2 subarrays created, are then recursively sorted.
        3) Pick a random element as a pivot.
        4) Choose the median as the pivot.
  
-### BASIC OPERATIONS AND STEPS FOLLOWED ### 
+## Basic Opeartions and Step Followed
 There are two basic operations in the algorithm:
 
 * **partitioning a section of the array.** 
@@ -78,51 +82,53 @@ Now we will move pointers one more step and L=R condition would satisfy so after
 
 Recursive call on the 2 subarrays. 
 
-### PSEUDOCODE ### 
+## PsuedoCode
 
 //Let us assume we take the first element as the pivot. 
 
 partition(arr,lb,ub){
 
-  p=arr[lb]
+  p=arr[lb]             // p is the pivot element
   
-  start=lb
+  start=lb              // start is the left pointer
   
-  end=ub
+  end=ub                // end is the right pointer
   
-  while (start<end){
+  while (start<end){  
   
-     while (arr[start]<p){
+     while (arr[start]<p){   // if the value at start is less than pivot, we will increament start by 1.
      
-       start++
+       start++   
      
      }
      
-     while (arr[end]>=p){
+     while (arr[end]>=p){   
+                            // if the value at end is greater than or equal to pivot, we will decreament end by 1.
      
        end--
      }
      
-     if (start<end)
-     
+     if (start<end)         // if start<end, we will swap the values at start and end.
+      
        swap(arr[start], arr[end])
   }
   
-  swap(a[lb],a[end]) // the final position of assumed pivot is at the end
+  swap(a[lb],a[end])        // the final position of assumed pivot is at the end
   
   return end;
 
 }
 
-quickSort(arr,lb,ub){
+quickSort(arr,lb,ub){       // lb is the lower bound and ub is the upper bound  
 
-  if (lb<ub){
+  if (lb < ub){               
+                           
   
-    location=partition(arr,lb,ub)
+    location=partition(arr,lb,ub)  
     
-    quickSort(arr,lb,location-1)
+    quickSort(arr,lb,location-1)   
     
-    quickSort(arr,location+1,ub)
+    quickSort(arr,location+1,ub)    
     
     }
 
