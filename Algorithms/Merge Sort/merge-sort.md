@@ -148,8 +148,8 @@ merge(arr[], beg, mid, end)
 
 ## Time Complexity
 
-Time complexity of merge sort is O(n*logn).
+Time complexity of merge sort is (**O(n*logn)**).
 
 ## Space Complexity
 
-Space complexity of merge sort is O(n).
+Space complexity of merge sort is (**O(n)**).
