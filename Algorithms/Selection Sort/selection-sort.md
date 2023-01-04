@@ -2,6 +2,7 @@
 # Selection Sort
 
 The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from the unsorted part and putting it at the beginning. 
+
 ![11](https://www.programiz.com/sites/tutorial2program/files/sorting.png)
 
 ## Working of Selection Sort
