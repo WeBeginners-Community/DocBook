@@ -1,7 +1,8 @@
 
 # Selection Sort
 
-A sorting algorithm is used to arrange elements of an array/list in a specific order. 
+The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from the unsorted part and putting it at the beginning. 
+
 ![11](https://www.programiz.com/sites/tutorial2program/files/sorting.png)
 
 ## Working of Selection Sort
@@ -23,7 +24,8 @@ Compare minimum with the third element. Again, if the third element is smaller, 
 ![6](https://www.programiz.com/sites/tutorial2program/files/Selection-sort-2.png)
 ![7](https://www.programiz.com/sites/tutorial2program/files/Selection-sort-3_1.png)
 
-##Pseudo Code
+## Pseudo Code
+
 selectionSort(array, size)
   repeat (size - 1) times
   set the first unsorted element as the minimum
@@ -32,4 +34,17 @@ selectionSort(array, size)
       set element as new minimum
   swap minimum with first unsorted position
 end selectionSort
+
+## Selection Sort Complexity
+
+**Time Complexity**
+Best	O(n2)
+Worst	O(n2)
+Average	O(n2)
+
+**Space Complexity**	
+O(1)
+
+**Stability**
+NO
 

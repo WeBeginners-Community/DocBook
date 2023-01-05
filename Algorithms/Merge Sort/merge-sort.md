@@ -1,6 +1,6 @@
-# Merge Sort # 
+# Merge Sort 
 
-### INTRODUCTION ### 
+## Introduction 
 
 Merge sort is the sorting technique that follows the divide and conquer approach. Merge sort is similar to the quick sort algorithm as it uses 
 the divide and conquer approach to sort the elements. It is one of the most popular and efficient sorting algorithm. 
@@ -17,7 +17,7 @@ We have to define the merge() function to perform the merging.
 
 The Time Complexity of Merge Sort is O(nlogn)
 
-### ALGORITHM EXPLAINED ###
+## Algoritm Explained
 
 So we have an unsorted array which containes 8 elements: [12,31,25,8,32,17,40,42]
 
@@ -41,11 +41,7 @@ Now we will merge elememts in a sorted pair and eventually our array will get so
 
 
 
-
-
-
-
-### PSEUDOCODE ### 
+## Pseudocode 
 
 We will have two function : 
 
@@ -148,4 +144,12 @@ merge(arr[], beg, mid, end)
     
     }    
 
-}    
+}  
+
+## Time Complexity
+
+Time complexity of merge sort is (**O(n*logn)**).
+
+## Space Complexity
+
+Space complexity of merge sort is (**O(n)**).
