@@ -78,6 +78,10 @@ Now we will move pointers one more step and L=R condition would satisfy so after
 
 Recursive call on the 2 subarrays. 
 
+### Example ###
+![Quicksort-example](https://user-images.githubusercontent.com/98210740/211071453-c61bd2f4-4291-476a-ac34-18d38125e88a.gif)
+________________________________________________
+
 ### PSEUDOCODE ### 
 
 //Let us assume we take the first element as the pivot. 
