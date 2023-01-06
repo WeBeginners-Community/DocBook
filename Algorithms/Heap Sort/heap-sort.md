@@ -12,7 +12,9 @@ A heap is created in the first step by adjusting the array's elements.
 After the heap has been created, the root element must now be repeatedly removed by shifting it to the end of the array, and the heap structure must then be stored with the other elements.
 Now let’s understand heap sort with an example:-
 81	89	9	11	14	76	54	22
+
 ![1](https://user-images.githubusercontent.com/101787864/211015177-a831a210-6190-4df5-a5b4-adcbcce5ddff.jpg)
+
 From the above given array, lets construct a heap and convert it into max heap.
  
 
@@ -59,6 +61,7 @@ Now, heap has only one element left. After deleting it, heap will be empty.
 
 Now the array becomes:
 9	11	14	22	54	76	81	89
+
 The array is completely sorted.
 
 ALGORITHM:
