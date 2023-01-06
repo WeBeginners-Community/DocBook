@@ -1,7 +1,10 @@
 HEAP SORT
+
 INTRODUCTION:
 A comparison-based sorting method based on the Binary Heap data structure is called heap sort. By using the components of the given array, it creates the min-heap or max-heap, and processes the elements. The ordering of an array is known as a min-heap or max-heap, with the root member serving as the array's minimum or maximum element. The idea behind a heap sort is to take each element out of the list's heap section one at a time before adding them to the sorted section. It is an in-place sorting algorithm.
+
 Heapify- The process of creating a heap data structure from a binary tree that is represented by an array is known as heapify. Min-Heap or Max-Heap is made with it.
+
 WORKING:
 There are two phases involved in the sorting of elements using heap sort. They are as follows:-
 A heap is created in the first step by adjusting the array's elements.
@@ -11,10 +14,12 @@ Now let’s understand heap sort with an example:-
 ![1](https://user-images.githubusercontent.com/101787864/211015177-a831a210-6190-4df5-a5b4-adcbcce5ddff.jpg)
 From the above given array, lets construct a heap and convert it into max heap.
  
+
 Now the given array becomes:
 89	81	76	22	14	9	54	11
 The next step is to delete the root element i.e. 89 from the max heap. For deletion, we have to swap 89 with last node i.e. 11. After deletion, again we have to perform heapify to convert it into max heap.
  ![2](https://user-images.githubusercontent.com/101787864/211015270-6d30a641-17ab-4cf0-9332-e74f7cc420d5.jpg)
+
 
 Now the array becomes:
 81	22	76	11	14	9	54	89
@@ -50,6 +55,7 @@ Now the array becomes:
 The array is completely sorted.
 
 ALGORITHM:
+
 HeapSort(arr)
 BuildMaxHeap(arr)  
 for i = length(arr) to 2  
@@ -59,8 +65,10 @@ for i = length(arr) to 2
 End  
 
 TIME COMPLEXITY:
+
 For all three cases (best case, worst case and average case), the time complexity of heap sort is O (n log n).
 
 ADVANTAGES:
+
 Efficiency- Heap sort is an efficient sorting algorithm. The time required performing heap sort increases logarithmically whereas, other algorithm may increase exponentially as the number of item to sort increases.
  Memory Usage- Memory use is modest since it just requires the minimum amount of memory needed to store the initial list of things to be sorted.
