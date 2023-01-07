@@ -37,14 +37,10 @@ In linear probing when data cannot stored in the home address or demanded addres
 
 ### Steps to obtain the hash table
 Example of linear probing -
-* Table Size = 77 
-* Hash Function - hash(key)= key%7 hash(key) = key%7 
-* Collision Resoulution Strategy - f(i)=if(i)=i
-
-* Insert - 16, 40, 27, 9, 7516, 40, 27, 9, 75
-* Search - 75, 2175,21
-* Delete - 4040
-* Steps involved are
+* Table Size = 7 .
+* Hash Function - hash(key)= key%7 hash(key) = key%7 .
+* Collision Resoulution Strategy - f(i)=if(i)=i.
+* Insert - 16, 40, 27, 9, 75.
 
 ---
 
@@ -52,7 +48,7 @@ Example of linear probing -
 
 ![My Image](https://scaler.com/topics/images/empty-hash-table-of-size-7.webp)
 
-* Step 2 - Inserting 16, 4016, 40, and 2727.
+* Step 2 - Inserting 16, 40 and 27.
 
 ```
 hash(16)= 16%7= 2hash(16)= 16%7=2
@@ -70,8 +66,8 @@ So we will probe for hash(9)+1hash(9)+1 i.e. cell 3, since the next cell i.e. 3 
 ```
 hash(75)=75%7=5hash(75)=75%7=5 
 ```
-Again collision happens because 40 is already placed in cell 55. So we search for cell 66 which is also occupied then we will search for cell (hash(75)+2)\%7 i.e. 0 which is empty so we will place 75 there.
-After inserting 99 and 75 hash table will look like -
+Again collision happens because 40 is already placed in cell 55. So we search for cell 66 which is also occupied then we will search for cell (hash(75)+2)%7 i.e. 0 which is empty so we will place 75 there.
+After inserting 9 and 75 hash table will look like -
 
 ![My Image](https://scaler.com/topics/images/after-inserting-9-and-75-hash-table.webp)
 
