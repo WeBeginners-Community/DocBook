@@ -37,14 +37,16 @@ In linear probing when data cannot stored in the home address or demanded addres
 
 ### Steps to obtain the hash table
 Example of linear probing -
-Table Size = 77 
-Hash Function - hash(key)= key%7 hash(key) = key%7 
-Collision Resoulution Strategy - f(i)=if(i)=i
+* Table Size = 77 
+* Hash Function - hash(key)= key%7 hash(key) = key%7 
+* Collision Resoulution Strategy - f(i)=if(i)=i
 
-Insert - 16, 40, 27, 9, 7516, 40, 27, 9, 75
-Search - 75, 2175,21
-Delete - 4040
-Steps involved are
+* Insert - 16, 40, 27, 9, 7516, 40, 27, 9, 75
+* Search - 75, 2175,21
+* Delete - 4040
+* Steps involved are
+
+---
 
 * Step 1 - Make an empty hash table of size 7.
 
