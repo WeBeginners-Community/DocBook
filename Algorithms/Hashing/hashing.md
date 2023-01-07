@@ -57,6 +57,7 @@ hash(27)= 27%7= 6hash(27)= 27%7=6
 ```
 ![My Image](https://scaler.com/topics/images/hash-table-after-insertion.webp)
 
+
 * Step 3 - Inserting 9 and 75.
 ```
 hash(9)= 9%7= 2hash(9)= 9%7= 2 
@@ -66,7 +67,7 @@ So we will probe for hash(9)+1 i.e. cell 3, since the next cell i.e. 3 is not oc
 ```
 hash(75)= 75%7= 5hash(75)=75%7=5 
 ```
-Again collision happens because 40 is already placed in cell 5. So we search for cell 66 which is also occupied then we will search for cell (hash(75)+2)%7 i.e. 0 which is empty so we will place 75 there.
+Again collision happens because 40 is already placed in cell 5. So we search for cell 6 which is also occupied then we will search for cell (hash(75)+2)%7 i.e. 0 which is empty so we will place 75 there.
 After inserting 9 and 75 hash table will look like -
 
 ![My Image](https://scaler.com/topics/images/after-inserting-9-and-75-hash-table.webp)
