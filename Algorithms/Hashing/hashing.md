@@ -61,10 +61,10 @@ hash(27)= 27%7= 6hash(27)= 27%7=6
 ```
 hash(9)= 9%7= 2hash(9)= 9%7= 2 
 ```
-But at index 2 already 1616 is placed and hence collision occurs.
-So we will probe for hash(9)+1hash(9)+1 i.e. cell 3, since the next cell i.e. 3 is not occupied we place 9 in cell 3.
+But at index 2 already 16 is placed and hence collision occurs.
+So we will probe for hash(9)+1 i.e. cell 3, since the next cell i.e. 3 is not occupied we place 9 in cell 3.
 ```
-hash(75)=75%7=5hash(75)=75%7=5 
+hash(75)= 75%7= 5hash(75)=75%7=5 
 ```
 Again collision happens because 40 is already placed in cell 55. So we search for cell 66 which is also occupied then we will search for cell (hash(75)+2)%7 i.e. 0 which is empty so we will place 75 there.
 After inserting 9 and 75 hash table will look like -
