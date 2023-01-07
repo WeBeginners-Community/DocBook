@@ -2,6 +2,7 @@
 Binary search is an efficient algorithm for finding an element within a sorted array. It works by repeatedly dividing the search interval in half until the desired element is found or it is clear that the element is not present in the array. 
 
 # Here is a C++ Program that implements Binary search Using Recursion:
+```cp
 #include <iostream>
 using namespace std;
 
@@ -33,6 +34,7 @@ int main()
     cout << "Element is present at index " << result;
     return 0;
 }
+```
 
 # Explanation Of the above program
 This code first defines the binarySearch function, which takes an array arr, the left and right indices of the search interval, and the element x to be searched for as input. If the search interval is not empty, the function calculates the midpoint of the interval and compares the element at the midpoint with x. If the element at the midpoint is equal to x, the function returns the index of the midpoint. If x is smaller than the element at the midpoint, the function calls itself with the subarray to the right of the midpoint as the search interval. If x is larger, the function calls itself with the subarray to the left of the midpoint as the search interval. If the search interval becomes empty, the function returns -1 to indicate that x was not found in the array.
