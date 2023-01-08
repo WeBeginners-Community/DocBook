@@ -15,6 +15,7 @@ Count sort is a stable sorting algorithm. Counting sort uses an additional array
 1. Accumulate all counts (starting with the first element of C, each item is added to the previous item).
 1. Backfill the target array: Place each element i into the C(i) item of the new array, subtracting 1 from C(i) each time you place an element.
 
+
 ### ALGORITHM EXPLAINED ###
 
 Now we have an unsorted array which contains 6 elements - {3,5,8,2,5,4} 
