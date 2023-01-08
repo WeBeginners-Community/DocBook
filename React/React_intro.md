@@ -19,3 +19,14 @@ For working with ReactJs, you first will need to include it's package for which 
 After that, for React package installation, run the following command on your command prompt by opening the particular directory where you want your project to be-
 ## npm create my-react-app 'your_project_name'
 by this, all your essential files,folders,modules will be installed in your opened repository.
+
+
+## Step-by-step commands to install ReactJs package and its files!
+-- Open the folder where you want to install the package
+-- Double click on this location URL and type "cmd" to open Command prompt.
+-- Command prompt appers as a dialog box with the folder opened.
+-- Run the command "npm create my-react-app <<your folder name>> "
+&& here you are done with package installation.
+
+
+"stay tuned for more concepts to be cleared ahead--Hope you are cleared till here".
