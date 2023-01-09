@@ -4,23 +4,36 @@ Counting sort is a **sorting algorithm** that sorts the elements of an array by 
 
 ## Working of Counting Sort
 1. Find out the maximum element (let it be **max**) from the given array.
-<img width="597" alt="1" src="https://user-images.githubusercontent.com/65494453/211302056-d4fc361f-6c93-4542-94cc-f926994cf2cf.png">
-Given array
+<p align="center">
+    <img width="597" alt="1" src="https://user-images.githubusercontent.com/65494453/211302056-d4fc361f-6c93-4542-94cc-f926994cf2cf.png">
+    <h4 align="center">Given array</h4>
+</p>
 
 2. Initialize an array of length **max+1** with all elements 0. This array is used for storing the count of the elements in the array.
-<img width="640" alt="2" src="https://user-images.githubusercontent.com/65494453/211302080-568b9ef8-6a78-48bf-b64d-7966f78bad69.png">Count array
+<p align="center">
+    <img width="640" alt="2" src="https://user-images.githubusercontent.com/65494453/211302080-568b9ef8-6a78-48bf-b64d-7966f78bad69.png">
+    <h4 align="center">Count array</h4>
+</p>
 
 3. Store the count of each element at their respective index in **count** array
 
     For example: if the count of element 3 is 2 then, 2 is stored in the 3rd position of **count** array. If element "5" is not present in the array, then 0 is stored in 5th position.
-
-<img width="640" alt="3" src="https://user-images.githubusercontent.com/65494453/211302119-ad52df7b-e2e1-4d6d-a7fb-b623b3c2cef2.png">Count of each element stored
+<p align="center">
+    <img width="640" alt="3" src="https://user-images.githubusercontent.com/65494453/211302119-ad52df7b-e2e1-4d6d-a7fb-b623b3c2cef2.png">
+    <h4 align="center">Count of each element stored</h4>
+</p>
 
 4. Store cumulative sum of the elements of the count array. It helps in placing the elements into the correct index of the sorted array.
-<img width="640" alt="4" src="https://user-images.githubusercontent.com/65494453/211302189-c280c8af-fd1e-4f4c-8646-0508468338fe.png">Cumulative count
+<p align="center">
+    <img width="640" alt="4" src="https://user-images.githubusercontent.com/65494453/211302189-c280c8af-fd1e-4f4c-8646-0508468338fe.png">
+     <h4 align="center">Cumulative count</h4>
+</p>
 
 5. Find the index of each element of the original array in the count array. This gives the cumulative count. Place the element at the index calculated as shown in figure below.
-<img width="714" alt="5" src="https://user-images.githubusercontent.com/65494453/211302305-544714d9-44a3-470c-a616-28335ceafdac.png">
+<p align="center">
+    <img width="714" alt="5" src="https://user-images.githubusercontent.com/65494453/211302305-544714d9-44a3-470c-a616-28335ceafdac.png">
+     <h4 align="center">Counting sort</h4>
+</p>
 
 6. After placing each element at its correct position, decrease its count by one.
 
