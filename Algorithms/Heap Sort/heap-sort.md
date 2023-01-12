@@ -83,3 +83,88 @@ ADVANTAGES:
 Efficiency- Heap sort is an efficient sorting algorithm. The time required performing heap sort increases logarithmically whereas, other algorithm may increase exponentially as the number of item to sort increases.
  
  Memory Usage- Memory use is modest since it just requires the minimum amount of memory needed to store the initial list of things to be sorted.
+ 
+ # C++ program for heap sort
+ // C++ program for implementation of Heap Sort
+
+#include <iostream>
+using namespace std;
+
+// To heapify a subtree rooted with node i
+// which is an index in arr[].
+// n is size of heap
+void heapify(int arr[], int N, int i)
+{
+
+	// Initialize largest as root
+	int largest = i;
+
+	// left = 2*i + 1
+	int l = 2 * i + 1;
+
+	// right = 2*i + 2
+	int r = 2 * i + 2;
+
+	// If left child is larger than root
+	if (l < N && arr[l] > arr[largest])
+		largest = l;
+
+	// If right child is larger than largest
+	// so far
+	if (r < N && arr[r] > arr[largest])
+		largest = r;
+
+	// If largest is not root
+	if (largest != i) {
+		swap(arr[i], arr[largest]);
+
+		// Recursively heapify the affected
+		// sub-tree
+		heapify(arr, N, largest);
+	}
+}
+
+// Main function to do heap sort
+void heapSort(int arr[], int N)
+{
+
+	// Build heap (rearrange array)
+	for (int i = N / 2 - 1; i >= 0; i--)
+		heapify(arr, N, i);
+
+	// One by one extract an element
+	// from heap
+	for (int i = N - 1; i > 0; i--) {
+
+		// Move current root to end
+		swap(arr[0], arr[i]);
+
+		// call max heapify on the reduced heap
+		heapify(arr, i, 0);
+	}
+}
+
+// A utility function to print array of size n
+void printArray(int arr[], int N)
+{
+	for (int i = 0; i < N; ++i)
+		cout << arr[i] << " ";
+	cout << "\n";
+}
+
+// Driver's code
+int main()
+{
+	int arr[] = { 12, 11, 13, 5, 6, 7 };
+	int N = sizeof(arr) / sizeof(arr[0]);
+
+	// Function call
+	heapSort(arr, N);
+
+	cout << "Sorted array is \n";
+	printArray(arr, N);
+}
+
+# Output
+
+![heap](https://user-images.githubusercontent.com/71088263/212091157-1015b8d2-3df7-406e-b5ae-0dc82d939b28.png)
