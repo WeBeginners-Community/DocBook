@@ -50,3 +50,42 @@ A common task for a web server can be to open a file on the server and return th
     * `nvm use "LST(The latest version Eg:- 18.13.0.)"`
     * click yes
     * To check the installation type `node --version` and Boom!!
+
+## REPL Environment
+
+The Node.js or node come bundled with REPL environment. Each part of the REPL environment has a specific work.
+
+Read: It reads user's input; parse the input into JavaScript data-structure and stores in memory.
+
+Evaluation: It takes and evaluates the data structure.
+
+Print: It prints the result.
+
+Loop: It loops the above command until user press `ctrl-c` ***twice*** or types `.exit`.
+
+We can start **REPL** by simply running "`node`" on the Terminal. 
+
+See this:
+
+
+![](https://user-images.githubusercontent.com/104223444/212406018-2e483091-0e15-4e59-b7fa-1fe654a5f016.jpg)
+
+Now we can execute various mathematical operations on REPL Node.js 
+
+like eg:- `console.log("Hello Node.js");` and hit enter the this code executes straight away i.e. printing "Hello Node.js".
+
+![](https://user-images.githubusercontent.com/104223444/212406517-e33715c4-595c-4436-861f-31ccd33bf5f2.jpg)
+
+
+Now we can try with any mathematical, or any multiline expressions for the evaluation.
+
+## Node.js REPL Commands
+
+|Commands|Description|
+|--------|------------|
+|`ctrl + c`|It is used to terminate the current command.|
+|`ctrl + c twice` or `ctrl+d`|	It terminates the node repl.|
+|`.clear`|It is used to exit from multi-line expressions.|
+|`.break`|It is used to exit from multi-line expressions.|
+|`.save filename`	|It saves current node repl session to a file.|
+|`.load filename`|It is used to load file content in current node repl session.|
