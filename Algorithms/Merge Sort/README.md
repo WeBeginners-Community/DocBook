@@ -53,99 +53,61 @@ We will have two function :
 
 **Merge**  - Initially copy the elements in 2 arrays and compare the elements of both the arrays using indices i, j and k. 
 
-MERGE_SORT(arr, beg, end)  
-  
-if beg < end
+    MERGE_SORT(arr, beg, end)  
 
-  set mid = (beg + end)/2 
-  
-  MERGE_SORT(arr, beg, mid)  
-  
-  MERGE_SORT(arr, mid + 1, end)  
-  
-  MERGE (arr, beg, mid, end)  
+    if beg < end  
+    set mid = (beg + end)/2  
+    MERGE_SORT(arr, beg, mid)  
+    MERGE_SORT(arr, mid + 1, end)  
+    MERGE (arr, beg, mid, end)  
+    end of if  
 
-end of if  
+    END MERGE_SORT   
 
-merge(arr[], beg, mid, end)
-
-{    
-     
-     i, j, k;  
-     
-     n1 = mid - beg + 1;    
-     
-     n2 = end - mid;    
-      
-     LeftArray[n1], RightArray[n2]; //temporary arrays  
-      
-    /* copy data to temp arrays */  
-    
-    for (int i = 0; i < n1; i++)    
-    
-    LeftArray[i] = a[beg + i];    
-    
-    for (int j = 0; j < n2; j++)    
-    
-    RightArray[j] = a[mid + 1 + j];    
-      
-    
-    i = 0, // Initial index of subarray 1  
-    
-    j = 0; // Initial index of subarray 2 
-    
-    k = beg;  // Initial index of the merged subarray 
-      
-    while (i < n1 && j < n2)    
-    
+    /* Function to merge the subarrays of a[] */  
+    void merge(int a[], int beg, int mid, int end)    
     {    
-        
-        if(LeftArray[i] <= RightArray[j])    
-        
+        int i, j, k;  
+        int n1 = mid - beg + 1;    
+        int n2 = end - mid;    
+
+        int LeftArray[n1], RightArray[n2]; //temporary arrays  
+
+        /* copy data to temp arrays */  
+        for (int i = 0; i < n1; i++)    
+        LeftArray[i] = a[beg + i];    
+        for (int j = 0; j < n2; j++)    
+        RightArray[j] = a[mid + 1 + j];    
+
+        i = 0, /* initial index of first sub-array */  
+        j = 0; /* initial index of second sub-array */   
+        k = beg;  /* initial index of merged sub-array */  
+
+        while (i < n1 && j < n2)    
         {    
-            
+            if(LeftArray[i] <= RightArray[j])    
+            {    
+                a[k] = LeftArray[i];    
+                i++;    
+            }    
+            else    
+            {    
+                a[k] = RightArray[j];    
+                j++;    
+            }    
+            k++;    
+        }    
+        while (i<n1)    
+        {    
             a[k] = LeftArray[i];    
-            
             i++;    
-        
+            k++;    
         }    
-        
-        else    
-        
-        {    
-            
-            a[k] = RightArray[j];    
-            
-            j++;    
-        
-        }    
-        
-        k++;    
-    
-    }
-    
-    while (i<n1) /// elements left of subarray 1   
-    
-    {    
-        
-        a[k] = LeftArray[i];    
-        
-        i++;    
-        
-        k++;    
-    
-    }    
-      
-    while (j<n2)  // elements left of subarray 2   
-    
-    {    
-        
-        a[k] = RightArray[j];    
-        
-        j++;    
-        
-        k++;    
-    
-    }    
 
-}    
+        while (j<n2)    
+        {    
+            a[k] = RightArray[j];    
+            j++;    
+            k++;    
+        }    
+    }    
