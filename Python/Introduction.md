@@ -70,3 +70,40 @@ For example:
 print(20 % 6)       //This will output 2
 print(1.25 % 0.5)   //This will output 0.25
 ```
+
+# Simple Input and Output
+In Python, we can use the **input()** function to get user input from the keyboard.
+
+The input() function takes one parameter: the prompt message. This message is displayed to the user and then the user can enter their value.
+
+For example:
+```
+name = input('Please enter your name: ') //By default input() function assumes input as string type
+print('Hello ' + name + ', Welcome to Python!')
+```
+
+This code will first display a prompt message asking the user to enter their name. Then it will store the entered value in the name variable and finally it will print out a greeting message.
+
+The output of this code would be something like this:
+```
+Please enter your name: John
+Hello John, Welcome to Python!
+```
+
+Another thing to know here is,
+
+The int() function can be used to convert user input (from the input() function) into an integer.
+
+For example:
+```
+num = int(input('Please enter a number: '))
+print(num + 5)
+```
+
+This code will first display a prompt message asking the user to enter a number. Then it will convert the entered value into an integer and store it in the num variable. Finally it will print out the number plus 5.
+
+The output of this code would be something like this:
+```
+Please enter a number: 10
+15
+```
