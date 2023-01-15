@@ -6,7 +6,6 @@
 ## ->Start and finish time is taken by the user for each activity.
 ## ->According to the algorithm the output is given as the activities which will be selected.
 
-# Output:
 
 
 
