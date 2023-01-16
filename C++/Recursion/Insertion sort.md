@@ -2,7 +2,8 @@
 The below program demonstrated Insertion Sort
 ```c
 #include <iostream>
-#include <stdio>
+#include <stdio.h>
+using namespace std;
 void insertion_sort_recursive(int arr[], int n) {
     if (n <= 1) 
         return;
