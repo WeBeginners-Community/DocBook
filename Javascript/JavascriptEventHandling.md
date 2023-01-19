@@ -25,7 +25,7 @@ Often, when events happen, you may want to do something.JavaScript lets you exec
 
     </html>
 
-• Code Explaination
+• Code Explaination:
 
 In the above example ,whenever any user clicks on the button so at that time "onclick" event or action takes place which then JavaScript code changes the content of the element with id="demo".It will display the current date after executing the Date function which is present in the code.
 
@@ -38,8 +38,15 @@ In the above example ,whenever any user clicks on the button so at that time "on
 
           Event Performed	 Event Handler	      Description
           Keydown & Keyup	 onkeydown & onkeyup	When the user press and then release the key
+          
+• Window/Document events:
 
-• JavaScript Event Handlers
+    EventPerformed	Event Handler	 Description
+    load	          onload	       When the browser finishes the loading of the page
+    unload	        onunload	     When the visitor leaves the current webpage, the browser unloads it
+    resize	        onresize	     When the visitor resizes the window of the browser
+
+• JavaScript Event Handlers:
 
      1)Event handlers can be used to handle and verify user input, user actions, and browser actions:
 
