@@ -17,9 +17,9 @@ Often, when events happen, you may want to do something.JavaScript lets you exec
 
 <body>
 
-<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+<button onclick="document.getElementById('dem').innerHTML=Date()">The time is?</button>
 
-<p id="demo"></p>
+<p id="dem"></p>
 
 </body>
 
