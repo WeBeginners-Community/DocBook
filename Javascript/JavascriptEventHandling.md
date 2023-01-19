@@ -36,7 +36,8 @@ In the above example ,whenever any user clicks on the button so at that time "on
 • Keyboard events:
 
 
-
+          Event Performed	 Event Handler	      Description
+          Keydown & Keyup	 onkeydown & onkeyup	When the user press and then release the key
 
 • JavaScript Event Handlers
 
