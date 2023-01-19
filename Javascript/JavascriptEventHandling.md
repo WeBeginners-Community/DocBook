@@ -11,11 +11,11 @@ Often, when events happen, you may want to do something.JavaScript lets you exec
             
 • Sample code of Event Handling:
 
-                          <!DOCTYPE html>
+    <!DOCTYPE html>
 
-                          <html>
+    <html>
 
-                          <body>
+    <body>
 
     <button onclick="document.getElementById('dem').innerHTML=Date()">The time is?</button>
 
