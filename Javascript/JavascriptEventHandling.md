@@ -29,6 +29,15 @@ Often, when events happen, you may want to do something.JavaScript lets you exec
 
 In the above example ,whenever any user clicks on the button so at that time "onclick" event or action takes place which then JavaScript code changes the content of the element with id="demo".It will display the current date after executing the Date function which is present in the code.
 
+• Mouse events:
+
+![image](https://user-images.githubusercontent.com/59620280/213414436-e109fcfe-da74-4fd1-89d5-feb0363cf497.png)
+
+• Keyboard events:
+
+
+
+
 • JavaScript Event Handlers
 
      1)Event handlers can be used to handle and verify user input, user actions, and browser actions:
