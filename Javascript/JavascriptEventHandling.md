@@ -17,7 +17,7 @@ Often, when events happen, you may want to do something.JavaScript lets you exec
 
     <body>
 
-    <button onclick="document.getElementById('dem').innerHTML=Date()">The time is?</button>
+    <button onclick="document.getElementById('dem').innerHTML=Date()">The time is</button>
 
     <p id="dem"></p>
 
@@ -27,5 +27,17 @@ Often, when events happen, you may want to do something.JavaScript lets you exec
 
 • Code Explaination
 
-In the above example ,whenever any user clicks on the button so at that time "onclick" event or action takes place which then JavaScript code changes the content of the element with id="demo".
-It will display the current date after executing the Date function which is present in the code.
+In the above example ,whenever any user clicks on the button so at that time "onclick" event or action takes place which then JavaScript code changes the content of the element with id="demo".It will display the current date after executing the Date function which is present in the code.
+
+• JavaScript Event Handlers
+
+Event handlers can be used to handle and verify user input, user actions, and browser actions:
+
+Things that should be done every time a page loads.
+
+Things that should be done when the page is closed.
+
+Action that should be performed when a user clicks a button.
+
+Content that should be verified when a user inputs data.
+
