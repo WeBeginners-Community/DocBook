@@ -1,20 +1,20 @@
-•INTRODUCTION
+                                                                   •Introduction
 
 The Knapsack Problem is an Optimization Problem in which we have to find an optimal answer among all the possible combinations. In this problem, we are given a set of items having different weights and values. We have to find the optimal solution considering all the given items. There are three types of knapsack problems : 0-1 Knapsack, Fractional Knapsack and Unbounded Knapsack.In the 0-1 Knapsack Problem, we are given a Knapsack or a Bag that can hold weight up to a certain value. We have various items that have different weights and values associated with them. Now we have to fill the knapsack in such a way so that the sum of the total weights of the filled items does not exceed the maximum capacity of the knapsack and the sum of the values of the filled items is maximum. 
 
 ![image](https://user-images.githubusercontent.com/59620280/213859330-fc1ea9fa-d5f3-4999-b8c1-fdfdb3395f6e.png)
 
 
-•What is Optimization problems?
+                                                            •What is Optimization problems?
 
 An optimization problem consists to find the best solution among all possible ones. For example, in the Bin Packing Problem (BPP) the aim is to find the right number of boxes of a given size to store a set of objects of given sizes; optimization involves, for example, finding the smallest number of boxes.
 
-•Problem Statement
+                                                                •Problem Statement
 
  Given a Knapsack with maximum weight limit as W and two arrays value[] and weight[]. You have to fill the knapsack in such a way so that the total weight of the filled items is less than or equal to W and the sum of the values of the filled items is maximum. value[i] and weight[i] will store the value and weight associated with ith item. You can not partially fill an item in the knapsack.
 
 
-•Solution of 0/1 knapsack problem.
+                                                          •Solution of 0/1 knapsack problem.
 
      •Consider the same cases as mentioned in the recursive approach. 
      •In a DP[][] table let’s consider all the possible weights from ‘1’ to ‘W’ as the columns and weights that can be kept as rows. 
@@ -59,7 +59,7 @@ An optimization problem consists to find the best solution among all possible on
     
 
 
-•Code for 0/1 Knapsack Problem
+                                                              •Code for 0/1 Knapsack Problem
 
     #include <bits/stdc++.h>
 
@@ -105,6 +105,6 @@ An optimization problem consists to find the best solution among all possible on
     return 0;
     }
     
-•Time complexity
+                                                                •Time complexity
 
      Time complexity for 0/1 Knapsack problem solved using DP is O(N*W) where N denotes number of items available and W denotes the capacity of the knapsack.
