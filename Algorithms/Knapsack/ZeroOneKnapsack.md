@@ -90,7 +90,7 @@ An optimization problem consists to find the best solution among all possible on
         }
     }
     return K[n][W];
- }
+    }
  
 
      int main()
