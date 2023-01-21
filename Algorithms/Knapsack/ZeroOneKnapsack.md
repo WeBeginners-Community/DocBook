@@ -11,18 +11,18 @@ An optimization problem consists to find the best solution among all possible on
 
 •Problem Statement
 
-Given a Knapsack with maximum weight limit as W and two arrays value[] and weight[]. You have to fill the knapsack in such a way so that the total weight of the filled items is less than or equal to W and the sum of the values of the filled items is maximum. value[i] and weight[i] will store the value and weight associated with ith item. You can not partially fill an item in the knapsack.
+ Given a Knapsack with maximum weight limit as W and two arrays value[] and weight[]. You have to fill the knapsack in such a way so that the total weight of the filled items is less than or equal to W and the sum of the values of the filled items is maximum. value[i] and weight[i] will store the value and weight associated with ith item. You can not partially fill an item in the knapsack.
 
 
 •Solution of 0/1 knapsack problem.
 
-•Consider the same cases as mentioned in the recursive approach. 
-•In a DP[][] table let’s consider all the possible weights from ‘1’ to ‘W’ as the columns and weights that can be kept as rows. 
-•The state DP[i][j] will denote the maximum value of ‘j-weight’ considering all values from ‘1 to ith’. So if we consider ‘wi’ (weight in ‘ith’ row) we can fill it in all columns which have ‘weight values > wi’. Now two possibilities can take place: 
-•Fill ‘wi’ in the given column.
-•Do not fill ‘wi’ in the given column.
-•Now we have to take a maximum of these two possibilities, formally if we do not fill the ‘ith’ weight in the ‘jth’ column then the DP[i][j] state will be the same as  DP[i-1][j] but if we fill the weight, DP[i][j] will be equal to the value of ‘wi’+ value of the column weighing ‘j-wi’ in the previous row. 
-•So we take the maximum of these two possibilities to fill the current state. 
+     •Consider the same cases as mentioned in the recursive approach. 
+     •In a DP[][] table let’s consider all the possible weights from ‘1’ to ‘W’ as the columns and weights that can be kept as rows. 
+     •The state DP[i][j] will denote the maximum value of ‘j-weight’ considering all values from ‘1 to ith’. So if we consider ‘wi’ (weight in ‘ith’ row) we can fill   it in all columns which have ‘weight values > wi’. Now two possibilities can take place: 
+     •Fill ‘wi’ in the given column.
+     •Do not fill ‘wi’ in the given column.
+     •Now we have to take a maximum of these two possibilities, formally if we do not fill the ‘ith’ weight in the ‘jth’ column then the DP[i][j] state will be the same as  DP[i-1][j] but if we fill the weight, DP[i][j] will be equal to the value of ‘wi’+ value of the column weighing ‘j-wi’ in the previous row. 
+     •So we take the maximum of these two possibilities to fill the current state. 
 
     Let weight elements = {1, 2, 3}
     Let weight values = {10, 15, 40}
@@ -107,4 +107,4 @@ Given a Knapsack with maximum weight limit as W and two arrays value[] and weigh
     
 •Time complexity
 
-Time complexity for 0/1 Knapsack problem solved using DP is O(N*W) where N denotes number of items available and W denotes the capacity of the knapsack.
+     Time complexity for 0/1 Knapsack problem solved using DP is O(N*W) where N denotes number of items available and W denotes the capacity of the knapsack.
