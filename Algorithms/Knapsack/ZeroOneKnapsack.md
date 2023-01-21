@@ -1,4 +1,4 @@
-                                                                   •Introduction
+                                                               •Introduction
 
 The Knapsack Problem is an Optimization Problem in which we have to find an optimal answer among all the possible combinations. In this problem, we are given a set of items having different weights and values. We have to find the optimal solution considering all the given items. There are three types of knapsack problems : 0-1 Knapsack, Fractional Knapsack and Unbounded Knapsack.In the 0-1 Knapsack Problem, we are given a Knapsack or a Bag that can hold weight up to a certain value. We have various items that have different weights and values associated with them. Now we have to fill the knapsack in such a way so that the sum of the total weights of the filled items does not exceed the maximum capacity of the knapsack and the sum of the values of the filled items is maximum. 
 
@@ -59,7 +59,7 @@ An optimization problem consists to find the best solution among all possible on
     
 
 
-                                                              •Code for 0/1 Knapsack Problem
+   •Code for 0/1 Knapsack Problem
 
     #include <bits/stdc++.h>
 
@@ -105,6 +105,6 @@ An optimization problem consists to find the best solution among all possible on
     return 0;
     }
     
-                                                                •Time complexity
+   •Time complexity
 
      Time complexity for 0/1 Knapsack problem solved using DP is O(N*W) where N denotes number of items available and W denotes the capacity of the knapsack.
