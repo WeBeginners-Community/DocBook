@@ -18,7 +18,20 @@ A database is a structured collection of data. It may be anything from a simple 
 <li> <b>Connectivity and Security:</b> Using MySQL, you can access databases remotely from anywhere on the World. Host-based authentication is enabled by passwords that are encrypted during connection.</li>
 </ul>
 
-## Some Query(Command) Examples:
+## Some Examples of MySQL Query:
+<ul>
+<li> <b>Create Database in MySQL:</b> A Database is a collection of Tables that stores every Table in a single collection.</li>
+<b>Query:-</b> <code>CREATE DATABASE movies;</code> <br>(<i>Here <b>"movies"</b> is the name of the Database.</i>)<p>
+
+<li><b>Fetch Data from Database:</b> <code>SELECT</code> query is used to return tables from the databases in MySQL. A table is used to store the data in an Organized way.</li>
+<b>Query:-</b> <code>SELECT cast FROM minions;</code> <br>(<i>Here <b>"minions"</b> is the name of the Table which is stored in the Database <b>"movies"</b>. And <b>"cast"</b> is the name of a column of table <b>"minions"</b></i>)<p>
+  
+  <li> <b>Add a row in the table:</b> To add a new row in the table <code>INSERT INTO</code> query is used. In the query, you need to specify the names of the columns that the new row contains and the values for those columns.</li>
+<b>Query:-</b> <code>INSERT INTO minions(rating,cast,budget) values ('4/5','Steve Carell','$74000000');</code> <br>(<i>Here <b>(rating,cast,budget)</b> is the name of the columns and <b>('4/5','Steve Carell','$74000000')</b> is the values for the columns</i>)
+  
+</ul>
+
+
 
 ## MySQL Download Link
 https://dev.mysql.com/downloads/mysql/
