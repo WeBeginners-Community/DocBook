@@ -35,3 +35,89 @@
 
 Hence, the path having the minimum cost is 1→ 3→ 5→ 8→ 9.
 
+• ALGORITHM
+
+        Algorithm MULTI_STAGE(G, k, n, p)
+        // Description: Solve multi-stage problem using dynamic programming
+
+        // Input:
+        k: Number of stages in graph G = (V, E)
+        c[i, j]:Cost of edge (i, j)
+
+        // Output: p[1:k]:Minimum cost path
+
+        cost[n] ← 0
+        for j ← n – 1 to 1 do
+        //Let r be a vertex such that (j, r) in E and c[j, r] + cost[r] is minimum
+        cost[j] ← c[j, r] + cost[r]
+        π[j] ← r
+        end
+
+        //Find minimum cost path
+        p[1] ← 1
+        p[k] ← n
+
+        for j ← 2 to k - 1 do
+          p[j] ← π[p[j - 1]]
+        end
+        
+• CODE
+
+    #include<bits/stdc++.h>
+    using namespace std;
+ 
+    #define N 8
+    #define INF INT_MAX
+ 
+
+    int shortestDist(int graph[N][N]) {
+ 
+    
+    int dist[N];
+ 
+    dist[N-1] = 0;
+ 
+    
+    for (int i = N-2 ; i >= 0 ; i--)
+    {
+ 
+        
+        dist[i] = INF;
+ 
+        
+        for (int j = i ; j < N ; j++)
+        {
+            
+            if (graph[i][j] == INF)
+                continue;
+ 
+            
+            dist[i] = min(dist[i], graph[i][j] +
+                                        dist[j]);
+        }
+    }
+ 
+    return dist[0];
+    }
+ 
+     
+     int main()
+    {
+    
+    int graph[N][N] =
+      {{INF, 1, 2, 5, INF, INF, INF, INF},
+       {INF, INF, INF, INF, 4, 11, INF, INF},
+       {INF, INF, INF, INF, 9, 5, 16, INF},
+       {INF, INF, INF, INF, INF, INF, 2, INF},
+       {INF, INF, INF, INF, INF, INF, INF, 18},
+       {INF, INF, INF, INF, INF, INF, INF, 13},
+       {INF, INF, INF, INF, INF, INF, INF, 2},
+      {INF, INF, INF, INF, INF, INF, INF, INF}};
+ 
+    cout << shortestDist(graph);
+    return 0;
+    }
+    
+• COMPLEXITY
+
+     O(n2)
