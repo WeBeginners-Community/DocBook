@@ -28,8 +28,12 @@ A database is a structured collection of data. It may be anything from a simple 
   
   <li> <b>Add a row in the table:</b> To add a new row in the table <code>INSERT INTO</code> query is used. In the query, you need to specify the names of the columns that the new row contains and the values for those columns.</li>
 <b>Query:-</b> <code>INSERT INTO minions(rating,cast,budget) values ('4/5','Steve Carell','$74000000');</code> <br>(<i>Here <b>(rating,cast,budget)</b> is the name of the columns and <b>('4/5','Steve Carell','$74000000')</b> is the values for the columns</i>)
-  
 </ul>
+
+**Note:-** Every query must end with semi-colon (;).
+
+### Example Table:
+![table_image](https://user-images.githubusercontent.com/93902835/214905449-5724ac1c-249f-447a-acf2-836ee7692f1e.png)
 
 
 
