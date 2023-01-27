@@ -13,7 +13,7 @@ npm start
 ```
 #### (npx is a package runner tool in npm; in case you consider it to be a typo 🙃)
 
-Create React App doesn’t handle backend logic or databases; it just creates a frontend build pipeline, so you can use it with any backend you want.
+Create React App just creates a frontend build, so you can use it with any backend you want.
 
 When you’re ready to deploy to production, running npm run build will create an optimized build of your app in the build folder.
 
