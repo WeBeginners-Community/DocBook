@@ -14,3 +14,6 @@ We want to find out the subset whose sum is equal to 5. There are many solutions
 all the possible subsets of the original array, i.e., there are 2n possible states. Here the running time complexity would be exponential. Then, we consider 
 all these subsets in O(N) linear running time and checks whether the sum of the items is M or not. The dynamic programming has pseudo-polynomial running time.
 
+
+• ALGORITHM
+
