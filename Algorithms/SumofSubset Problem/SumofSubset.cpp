@@ -1,11 +1,9 @@
-// A recursive solution for subset sum problem
+
 #include <iostream>
 
 using namespace std;
   
-// Returns true if there is a subset
-
-// of set[] with sum equal to given sum
+// Returns true if there is a subset of set[] with sum equal to given sum.
 
 bool isSubsetSum(int set[], int n, int sum)
 
@@ -22,9 +20,7 @@ bool isSubsetSum(int set[], int n, int sum)
         return false;
         
   
-    // If last element is greater than sum,
-    
-    // then ignore it
+    // If last element is greater than sum,then ignore that case.
     
     if (set[n - 1] > sum)
     
