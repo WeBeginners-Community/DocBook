@@ -15,5 +15,8 @@ all the possible subsets of the original array, i.e., there are 2n possible stat
 all these subsets in O(N) linear running time and checks whether the sum of the items is M or not. The dynamic programming has pseudo-polynomial running time.
 
 
-• ALGORITHM
+• COMPLEXITY ANALYSIS:
+
+O(sum*n), where sum is the ‘target sum’ and ‘n’ is the size of array.
+
 
