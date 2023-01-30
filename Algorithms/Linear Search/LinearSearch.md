@@ -17,7 +17,8 @@ Continues until the element or the list's end is reached.
 Linear Search is a sequential search technique that begins at one end and proceeds through each element of a list until the target element is located; otherwise, the search continues until the data set is exhausted. It is the simplest search algorithm.
 
 ### Simple Illustration
-
+<img src="https://user-images.githubusercontent.com/95307102/215497290-55bbdadf-3cbb-4718-b44b-44a96b713c6d.png">
+<img src="https://user-images.githubusercontent.com/95307102/215497614-09a69cb3-c3ef-4006-ab4a-279425b51b6d.png">
 
 ### Linear Search Algorithm
 1. Step 1: First, read the search element (Target element) in the array.
@@ -34,9 +35,11 @@ terminated, and the message “Element is not found” will be displayed.
 
 Given an array arr[] of N elements, the task is to write a function to search a given element x in arr[].
 
-`**Input**: arr[] = {10, 20, 80, 30, 60, 50,110, 100, 130, 170}, x = 110;`
-`**Output**: 6`
-`**Explanation**: Element x is present at index 6`
+**Input**: arr[] = {10, 20, 80, 30, 60, 50,110, 100, 130, 170}, x = 110;
+
+**Output**: 6
+
+**Explanation**: Element x is present at index 6
 
 #### Follow the below idea to solve the problem:
 
