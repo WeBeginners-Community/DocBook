@@ -3,7 +3,7 @@ A linear search, also known as a sequential search, is a way of finding an eleme
 
 Continues until the element or the list's end is reached.
 
-### Let's know more!
+## Let's know more!
 1. Linear search is the most basic method of searching.
 2. In the Linear search strategy, the element to be discovered is searched consecutively in the list.
 3. This approach may be used on a sorted or unsorted list (usually arrays).
@@ -16,11 +16,11 @@ Continues until the element or the list's end is reached.
 #### Defination
 Linear Search is a sequential search technique that begins at one end and proceeds through each element of a list until the target element is located; otherwise, the search continues until the data set is exhausted. It is the simplest search algorithm.
 
-### Simple Illustration
+## Simple Illustration
 <img src="https://user-images.githubusercontent.com/95307102/215497290-55bbdadf-3cbb-4718-b44b-44a96b713c6d.png">
 <img src="https://user-images.githubusercontent.com/95307102/215497614-09a69cb3-c3ef-4006-ab4a-279425b51b6d.png">
 
-### Linear Search Algorithm
+## Linear Search Algorithm
 1. Step 1: First, read the search element (Target element) in the array.
 2. Step 2: In the second step compare the search element with the first element in the array.
 3. Step 3: If both are matched, display “Target element is found” and terminate the Linear Search 
@@ -31,7 +31,7 @@ last element of the array.
 6. Step 6 – If the last element in the list does not match, the Linear Search Function will be 
 terminated, and the message “Element is not found” will be displayed.
 
-### Example
+## Example
 
 Given an array arr[] of N elements, the task is to write a function to search a given element x in arr[].
 
@@ -52,7 +52,7 @@ Follow the given steps to solve the problem:
 3. If the current element is not the target element and if there are more elements in the array, set the current element to the next element and repeat step 2.
 4. If the current element is not the target element and there are no more elements in the array, return -1 to indicate that the element was not found.
 
-### Time and Space Complexity
+## Time and Space Complexity
 
 Linear search Complexity as given below:
 ##### Space Complexity
@@ -78,18 +78,18 @@ in the search array
 
 `Otherwise, check if the element at the current index in the array is equal to the key or not i.e, arr[size – 1] == key. If equal, then return the index of the found key.`
 
-#### Advantages of Linear Search:
+### Advantages of Linear Search:
 1. Linear search is simple to implement and easy to understand.
 2. Linear search can be used irrespective of whether the array is sorted or not. It can be used on arrays of any data type.
 3. Does not require any additional memory.
 4. It is a well suited algorithm for small datasets.
 
-#### Drawbacks of Linear Search:
+### Drawbacks of Linear Search:
 1. Linear search has a time complexity of O(n), which in turn makes it slow for large datasets.
 2. Not suitable for large array.
 3. Linear search can be less efficient than other algorithms, such as hash tables.
 
-#### When to use Linear Search:
+### When to use Linear Search:
 1. When we are dealing with a small dataset.
 2. When you need to find an exact value.
 3. When you are searching a dataset stored in contiguous memory.
