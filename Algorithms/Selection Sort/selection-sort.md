@@ -1,8 +1,10 @@
 
 # Selection Sort
 
-A sorting algorithm is used to arrange elements of an array/list in a specific order.
-First, the array is divided into two parts: a sorted portion and an unsorted portion. 
+ 
+A sorting algorithm is used to arrange elements of an array/list in a specific order. 
+First, the array is divided into two parts: a sorted portion and an unsorted portion.
+ 
 The sorted portion starts as an empty array and the unsorted portion contains all of the elements.
 The algorithm selects the smallest element from the unsorted portion and adds it to the end of the sorted portion.
 This process is repeated until the unsorted portion is empty and the entire array is sorted.
@@ -29,8 +31,10 @@ Compare minimum with the third element. Again, if the third element is smaller, 
 
 #Visualization
 
-![selection sortt](https://user-images.githubusercontent.com/98210740/212723947-66f3bb73-bec7-46e4-ac3e-02eb8178358e.gif)
-____________________________________________________________
+ 
+![selection sortt](https://user-images.githubusercontent.com/98210740/212728104-650e9fed-46f4-4f9c-b94b-297f4a4dcf29.gif)
+______________________________________________________________________________________________
+ 
 
 ##Pseudo Code
 selectionSort(array, size)
