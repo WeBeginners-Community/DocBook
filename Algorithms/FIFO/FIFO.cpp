@@ -117,7 +117,6 @@ int main()
     vector<int> pages(m);
     for (int i = 0; i < m; i++)
     {
-
         cin >> pages[i];
     }
     int count = 0;
