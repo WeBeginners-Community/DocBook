@@ -45,8 +45,6 @@ class Coloring {
        
       if(colorCount== numberOfVertices)  
         return true; 
-
-      
       for(Vertex nbrvertex: vertex.adjacentVertices){ 
         if (!nbrvertex.colored){ 
           if(setColors(nbrvertex))
