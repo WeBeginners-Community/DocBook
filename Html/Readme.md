@@ -7,6 +7,7 @@ This is a language written for writing web pages. It uses tags to define structu
 ## WHERE TO WRITE ?
  
  There are various editors available
+
     * Sublime Text
     * Notepad
     * VS CODE
@@ -94,13 +95,162 @@ Line 8: We can add more tags and ther information to be discplayed.
 
 ![12](code.jpg)
 ![13](out3.jpg)
- 
 
 
+## Styling your Page Elements
+
+You can easily style elements using the ``<style>`` tag. It contains CSS properties. You can check out CSS Documentation [here](https://github.com/WeBeginners-Community/DocBook/tree/master/CSS)
 
 
+This can be placed in the ``head`` of the HTML DOM or ine individual element.
 
+![14](style1.png)
 
+## Organise Data in Tables
+
+You can create tables with the help of ``<table> </table>`` tags
+It creates grid structure with rows and columns and can be customised.
+### Tags
+1. ``<table> </table>`` - The Table is enclosed in these two tags.
+2. ``<tr> </tr>`` - This tag is the start/end of the Table Row.
+3. ``<th> </th>`` - This tag is the start/end of the Table Column
+4. ``<td> </td>`` - This represents a Table Cell.
+
+Here's an example-
+````
+<table>
+  <tr>
+  <th>Person</th>
+    <th>Person 1</th>
+    <th>Person 2</th>
+    <th>Person 3</th>
+  </tr>
+  <tr>
+  <th>Name</th>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+  <tr>
+  <th>Age</th>
+    <td>16</td>
+    <td>14</td>
+    <td>10</td>
+  </tr>
+</table>
+````
+It'll look like this-
+
+**Person** | Person 1 | Person 2 |	Person 3 |
+|--|--|--|--|
+**Name** |	Emil	| Tobias |	Linus | 
+**Age** | 16|	14 | 10
+
+## Lists
+It is a set of items grouped together. Each list item is enclosed in ``<li>`` tag. It is of two types-
+
+    Unordered List
+    Ordered List
+
+### Unordered List
+These are enclosed in ``<ul>`` tags.
+````
+<ul>
+    <li>Beetroot</li>
+    <li>Ginger</li>
+    <li>Potato</li>
+        <li>Radish</li>
+/ul>
+````
+It'll look like this by default
+<ul>
+         <li>Beetroot</li>
+         <li>Ginger</li>
+         <li>Potato</li>
+         <li>Radish</li>
+</ul>
+
+####  Type Attribute
+The Type attribute can be used to specify the style of bullet in the list. Here are the Options-
+
+    <ul type = "square"> -   Square Shape
+    <ul type = "disc">   -   Normal Bullet 
+    <ul type = "circle"> -   Outlined Bullet
+
+This is how they look-
+<ul type="square"><li>Square</li></ul>
+<ul type="disc"><li>Disc</li></ul>
+<ul type="circle"><li>Circle</li></ul>
+
+## Ordered List
+These are enclosed in ``<ol>`` tags.
+````
+<ol>
+    <li>Beetroot</li>
+    <li>Ginger</li>
+    <li>Potato</li>
+    <li>Radish</li>
+/ol>
+````
+It'll look like this by default
+<ol>
+         <li>Beetroot</li>
+         <li>Ginger</li>
+         <li>Potato</li>
+         <li>Radish</li>
+</ol>
+
+####  Type Attribute
+The Type attribute can be used to specify the style of numbering in the list. Here are the Options-
+
+    <ol type = "1"> - Default-Case Numerals.
+    <ol type = "I"> - Upper-Case Numerals.
+    <ol type = "i"> - Lower-Case Numerals.
+    <ol type = "A"> - Upper-Case Letters.
+    <ol type = "a"> - Lower-Case Letters.
+
+This is how they look-
+<ol type = "1"><li>Numbered</li></ol>
+<ol type = "I"><li>Uppercase Roman Numerals</li></ol>
+<ol type = "i"><li>Lowercase Roman Numerals</li></ol>
+<ol type = "A"><li>Uppercase Letters</li></ol>
+<ol type = "a"><li>Lowercase Letters</li></ol>
+
+## Div
+In an HTML document, the ``<div>`` tag designates a division or section.
+The HTML "div" tag is used to group HTML elements, which are subsequently given a container and given a CSS or JavaScript style.
+The ``class`` or ``id`` attribute makes it simple to decorate the div tag.
+
+The div tag is a block-level element, which means that it will start on a new line and take up the full width available.
+
+For Example
+````
+<div style=”color:#0000FF”>
+
+<h3>This heading is set to blue in the div element.</h3>
+
+<p>This text is also set to blue.</p>
+
+</div>
+````
+It'll look like this-
+<div style="color:#0000FF">
+<h3>This heading is set to blue in the div element.</h3>
+<p>This text is also set to blue.</p>
+</div>
+
+## Span
+The HTML ``<span>`` tag is used to group inline-elements in a document. The ``<span>`` tag provides no visual change by itself.
+The ``class`` or ``id`` attribute of the ``<span>`` tag allows for simple styling using CSS or manipulation with JavaScript.
+
+The ``<div>`` element and the ``<span>`` tag are quite similar, however div is a block-level element and span is an inline element.
+
+For Example
+````
+<p>My mother has <span style="color:blue">blue</span> eyes.</p>
+````
+It'll look like this-
+<p>My mother has <span style="color:blue">blue</span> eyes.</p>
 
 
 

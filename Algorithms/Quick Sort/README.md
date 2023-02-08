@@ -1,5 +1,6 @@
 # Quick Sort
-Quick Sort is a sorting algorithm based on the divide and conquer algorithm. We first initialize a pivot value and place it in its correct position in the array, such that all elements (unsorted or sorted) less than the pivot are placed on the left-hand side and the elements greater than or equal to the pivot are placed on the right-hand side of the pivot.
+Quick Sort is a sorting algorithm based on the divide and conquer algorithm. 
+We first initialize a pivot value and place it in its correct position in the array, such that all elements (unsorted or sorted) less than the pivot are placed on the left-hand side and the elements greater than or equal to the pivot are placed on the right-hand side of the pivot.
 
 **Time Complexity:**  O(n^2) (Worst Case)
 
@@ -79,8 +80,12 @@ Now we will move pointers one more step and L=R condition would satisfy so after
 Recursive call on the 2 subarrays.
 
 ### Example ###
+
 ![Quicksort-example](https://user-images.githubusercontent.com/98210740/211071453-c61bd2f4-4291-476a-ac34-18d38125e88a.gif)
 _________________________________________________
+
+
+
 ### PSEUDOCODE ### 
 
 //Let us assume we take the first element as the pivot. 
@@ -130,11 +135,4 @@ quickSort(arr,lb,ub){
     }
 
 }
-
-
-
-
-
-
-
 
