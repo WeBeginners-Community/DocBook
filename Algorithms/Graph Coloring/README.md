@@ -1,7 +1,9 @@
  Graph Coloring Problem :
 
  We have been given a graph and we are asked to color all vertices with the ‘M’ number of given colors, in such a way that no two adjacent vertices should have the same color.
- image.png
+ 
+![image](https://user-images.githubusercontent.com/98210740/217501773-ae5422a0-7c69-46c7-919c-dc905219394f.png)
+
  It it is possible to color all the vertices with the given colors then we have to output the colored result, otherwise output ‘no solution possible’.
 The least possible value of ‘m’ required to color the graph successfully is known as the chromatic number of the given graph.
 
@@ -16,9 +18,11 @@ After coloring, we again move to another adjacent vertex that is uncolored and r
 In case, we find a vertex that has all adjacent vertices colored and no color is left to make it color different, we backtrack and change the color of the last colored vertices and again proceed further.
 
 If by backtracking, we come back to the same vertex from where we started and all colors were tried on it, then it means the given number of colors (i.e. ‘m’) is insufficient to color the given graph and we require more colors (i.e. a bigger chromatic number).
-image.png
+
+![image](https://user-images.githubusercontent.com/98210740/217501907-2ab56d51-bc42-4f5f-86ee-99534b5b89e9.png)
 
 Steps To color graph using the Backtracking Algorithm:
+
 1. Different colors:
    A.Confirm whether it is valid to color the current vertex with the current color (by checking whether any of its adjacent vertices are colored with the same color).
    B.If yes then color it and otherwise try a different color.
@@ -136,3 +140,7 @@ public class Graph{
     }
   }
 }
+
+Output-
+
+![image](https://user-images.githubusercontent.com/98210740/217502149-9d5b9be7-1d36-45f8-9984-3632096b1b37.png)
