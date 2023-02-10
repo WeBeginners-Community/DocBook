@@ -7,9 +7,10 @@ It's a decision problem that asks if a given set of positive integers contains a
 Given a set of positive integers and a target sum, the goal is to determine whether there exists a subset of the given set that adds up to the target sum. The problem can be formalized as follows:
 
 Input: 
-* A set of positive integers S = {a1, a2, ..., an} and a target sum T.
+  * A set of positive integers S = {a1, a2, ..., an} and a target sum T.
+
 Output: 
-* YES if there exists a subset of S that adds up to T, and NO otherwise.
+  * YES if there exists a subset of S that adds up to T, and NO otherwise.
 
 The subset sum problem is NP-complete, meaning that there is no known algorithm that can solve the problem in polynomial time for all inputs. Despite this, there are many algorithms for solving the subset sum problem, including brute force, backtracking, and dynamic programming. The choice of algorithm depends on the size of the input set, the target sum, and the desired trade-off between speed and memory usage.
 
