@@ -28,13 +28,18 @@ bool isSubsetSum(int set[], int n, int sum, vector<vector<int> >& dp)
 int main()
 {
     int set[] = {5, 10, 15, 20, 25, 30};
+    
     int sum = 60;
+    
     int n = sizeof(set) / sizeof(set[0]);
 
     vector<vector<int> > dp(n + 1, vector<int>(sum + 1, -1));
+    
     if (isSubsetSum(set, n, sum, dp) == true)
         cout << "Found a subset with given sum";
     else
         cout << "No subset with given sum";
+ 
     return 0;
+
 }
