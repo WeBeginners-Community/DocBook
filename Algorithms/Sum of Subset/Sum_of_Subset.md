@@ -4,7 +4,9 @@
 The subset sum problem is a well-known problem in computer science and mathematics. 
 It's a decision problem that asks if a given set of positive integers contains a subset that adds up to a given target sum.
 
-Given a set of positive integers and a target sum, the goal is to determine whether there exists a subset of the given set that adds up to the target sum. The problem can be formalized as follows:
+Given a set of positive integers and a target sum, the goal is to determine whether there exists a subset of the given set that adds up to the target sum. 
+
+## The problem can be formalized as follows:
 
 Input: 
   * A set of positive integers S = {a1, a2, ..., an} and a target sum T.
