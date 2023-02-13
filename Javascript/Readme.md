@@ -1,2 +1,2 @@
 ## Javascript Documentaions 
-The folders name should be "Project Name" (No punctuations strictly)
+The folders name should be "Project Name" (No punctuations strictly)`
