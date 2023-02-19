@@ -74,13 +74,13 @@ print(1.25 % 0.5)   //This will output 0.25
 Python has a rich set of standard libraries built into the language, which provide a wide range of functionality for tasks such as data manipulation, scientific computing, web development, and more. In addition to the standard libraries, there are also many third-party libraries available for Python that extend the language's capabilities even further. 
 
 ## Some popular Python libraries include:
-### NumPy: a library for numerical computing with arrays and matrices.
-### Pandas: a library for data analysis and manipulation.
-### Matplotlib: a library for creating static, animated, and interactive visualizations in Python.
-### SciPy: a library for scientific computing with advanced functions for optimization, integration, linear algebra, and more.
-### Scikit-learn: a machine learning library for building predictive models.
-### TensorFlow: a library for building and training deep neural networks.
-### Keras: a high-level neural networks API, written in Python and capable of running on top of TensorFlow, CNTK, or Theano.
-### Flask: a lightweight web framework for building web applications.
-### Django: a full-stack web framework for building complex web applications.
-### Requests: a library for making HTTP requests in Python.
+- NumPy: a library for numerical computing with arrays and matrices.
+- Pandas: a library for data analysis and manipulation.
+- Matplotlib: a library for creating static, animated, and interactive visualizations in Python.
+- SciPy: a library for scientific computing with advanced functions for optimization, integration, linear algebra, and more.
+- Scikit-learn: a machine learning library for building predictive models.
+- TensorFlow: a library for building and training deep neural networks.
+- Keras: a high-level neural networks API, written in Python and capable of running on top of TensorFlow, CNTK, or Theano.
+- Flask: a lightweight web framework for building web applications.
+- Django: a full-stack web framework for building complex web applications.
+- Requests: a library for making HTTP requests in Python.
