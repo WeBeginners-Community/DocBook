@@ -70,10 +70,10 @@ For example:
 print(20 % 6)       //This will output 2
 print(1.25 % 0.5)   //This will output 0.25
 ```
-#Libraries in Python
+# Libraries in Python
 Python has a rich set of standard libraries built into the language, which provide a wide range of functionality for tasks such as data manipulation, scientific computing, web development, and more. In addition to the standard libraries, there are also many third-party libraries available for Python that extend the language's capabilities even further. 
 
-##Some popular Python libraries include:
+## Some popular Python libraries include:
 NumPy: a library for numerical computing with arrays and matrices.
 Pandas: a library for data analysis and manipulation.
 Matplotlib: a library for creating static, animated, and interactive visualizations in Python.
