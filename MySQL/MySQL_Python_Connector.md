@@ -8,5 +8,23 @@ First, you need to make sure you install the correct version of the software.
 
 It is necessary to have Python and PIP installed on your system in order to install the Python-MySQL-connector module. <br>
 If Python and Pip are not installed, follow the instructions given [<ins>here</ins>](https://www.activestate.com/resources/quick-reads/how-to-install-pip-on-windows/). <br>
+<br>
 If Python and Pip are already installed, run the following commands in the Terminal (CMD).
+<br>
+<code>pip3 install mysql-connector-python</code>
 
+## How To connect to MySQL in Python?
+
+We can connect to the MySQL server using the connect() method.
+
+```
+import mysql.connector
+  
+dataBase = mysql.connector.connect(
+  host ="localhost",
+  user ="user",
+  passwd ="password"
+) 
+```
+
+## Python MySQL connection function and method:
