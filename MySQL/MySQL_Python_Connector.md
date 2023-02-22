@@ -1,8 +1,12 @@
 ## What is MySQL-Python Connector?
 As the name says, it connects Python and MySQL. This Python driver is used for communicating with MySQL. It allows you to run queries and fetch data from MySQL using Python.
 
+## Why MySQL-Python Connector required?
+Let's understand it with a real-world application. As an example, if there is one software for a student attendance system, it would require **MySQL Database** to store student data (such as roll number, name, date of birth, etc.) and a **Python Program** to take attendance. <br>
+So with the **MySQL-Connector**, you can easily do this.
+
 ## How to install MySQL-Python Connector?
-First, you need to make sure you install the correct version of the software.
+Let's understand it with a real-world application. As an example, if there is one software for a student attendance system, it would require MySQL Database to store student data (such as roll number, name, date of birth, etc.) and a Python Program to take attendance. So with the MySQL-Connector, you can easily do this.
 
 ![Version_list](https://user-images.githubusercontent.com/93902835/220413037-9663c450-34d1-47de-814a-c6885d2b6d04.png)
 
