@@ -25,13 +25,17 @@ We can connect to the MySQL server using the connect() method of **mysql.connect
 import mysql.connector #importing MySQL Connector
   
 dataBase = mysql.connector.connect(
-  host ="localhost",
-  user ="root",
-  passwd ="password"
+  host = "localhost",
+  user = "root",
+  passwd = "password",
+  database= "students_details"
 ) #Passing all the necessary arguments to connect with the MySQL server
 ```
 **Host** = The server name or IP address on which MySQL is running. If you are running MySQL on your local computer then use "**localhost**". <br>
 **User** = It is your account username. The default username is "**root**". <br>
 **Passwd** = It is a password for your account; by default, there is no password for the "**root**" user.<br>
+**Database** = Name of the database which you want to connect
 
 ## Some basic MySQL query in Python:
+
+### 
