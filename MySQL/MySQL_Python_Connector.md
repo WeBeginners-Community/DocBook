@@ -6,7 +6,6 @@ Let's understand it with a real-world application. As an example, if there is on
 So with the **MySQL-Connector**, you can easily do this.
 
 ## How to install MySQL-Python Connector?
-Let's understand it with a real-world application. As an example, if there is one software for a student attendance system, it would require MySQL Database to store student data (such as roll number, name, date of birth, etc.) and a Python Program to take attendance. So with the MySQL-Connector, you can easily do this.
 
 ![Version_list](https://user-images.githubusercontent.com/93902835/220734133-7624863e-cbaf-4d7d-ad01-aaa76e56feb8.png)
 
@@ -35,8 +34,8 @@ abc = mysql.connector.connect(
 **Host** = The server name or IP address on which MySQL is running. If you are running MySQL on your local computer then use "**localhost**". <br>
 **User** = It is your account username. The default username is "**root**". <br>
 **Passwd** = It is a password for your account; by default, there is no password for the "**root**" user.<br>
-**Database** = Name of the database which you want to connect <br> <br>
-Note: "**abc**" is the connection name (or object) here.  For different methods, the connection name is required further in the code, so remembering it is useful. 
+**Database** = Name of the database which you want to connect. Here for example we are taking "students_details" <br> <br>
+Note: Here, "**abc**" is the connection name (or object).  For using different methods, the connection name is required further in the code, so remembering it is useful. 
 
 ## Some basic MySQL methods in Python:
 
