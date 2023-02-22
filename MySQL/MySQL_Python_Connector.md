@@ -1,5 +1,5 @@
 ## What is MySQL-Python Connector?
-As the name says, it connects Python and MySQL. This Python driver is used for communicating with MySQL. It allows you to run queries and fetch data using Python.
+As the name says, it connects Python and MySQL. This Python driver is used for communicating with MySQL. It allows you to run queries and fetch data from MySQL using Python.
 
 ## How to install MySQL-Python Connector?
 First, you need to make sure you install the correct version of the software.
@@ -14,17 +14,20 @@ If Python and Pip are already installed, run the following commands in the Termi
 <code>pip3 install mysql-connector-python</code>
 
 ## How To connect to MySQL in Python?
+Before running queries in Python, we need to connect the MySQL server with Python using some commands. <br>
+We can connect to the MySQL server using the connect() method of **mysql.connector**.
 
-We can connect to the MySQL server using the connect() method.
-
-```
-import mysql.connector
+```py
+import mysql.connector #importing MySQL Connector
   
 dataBase = mysql.connector.connect(
   host ="localhost",
-  user ="user",
+  user ="root",
   passwd ="password"
-) 
+) #Passing all the necessary arguments to connect with the MySQL server
 ```
+**Host** = The server name or IP address on which MySQL is running. If you are running MySQL on your local computer then use "**localhost**". <br>
+**User** = It is your account username. The default username is "**root**". <br>
+**Passwd** = It is a password for your account; by default, there is no password for the "**root**" user.<br>
 
-## Python MySQL connection function and method:
+## Some basic MySQL query in Python:
