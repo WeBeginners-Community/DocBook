@@ -24,7 +24,7 @@ We can connect to the MySQL server using the connect() method of **mysql.connect
 ```py
 import mysql.connector #importing MySQL Connector
   
-dataBase = mysql.connector.connect(
+abc = mysql.connector.connect(
   host = "localhost",
   user = "root",
   passwd = "password",
@@ -34,15 +34,34 @@ dataBase = mysql.connector.connect(
 **Host** = The server name or IP address on which MySQL is running. If you are running MySQL on your local computer then use "**localhost**". <br>
 **User** = It is your account username. The default username is "**root**". <br>
 **Passwd** = It is a password for your account; by default, there is no password for the "**root**" user.<br>
-**Database** = Name of the database which you want to connect
+**Database** = Name of the database which you want to connect <br> <br>
+Note: "**abc**" is the connection name (or object) here.  For different methods, the connection name is required further in the code, so remembering it is useful. 
 
 ## Some basic MySQL methods in Python:
 
 ### cursor() 
+Using the cursor method, you can execute SQL statements.
 
+To create a cursor, use the cursor() method of a connection object:
+```py
+cur = abc.cursor() #Here abc is connection name
+                   #And cur is cursor name
+```
 ### execute() 
+The execute() method runs the SQL query and returns the result.
+
+This method executes the given database operation (query or command):
+```py
+cur.execute(data) # Here data is the query or command
+
+#Example query or command:-
+cur.execute("Select * from students1") #Here we are selecting all the records from table students1 
+#All the records details will be stored in the cur (cursor name).                                     
+```
+
 
 ### fetchall()
+
 
 ### close()
 
