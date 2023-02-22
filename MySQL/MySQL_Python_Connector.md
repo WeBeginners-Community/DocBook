@@ -36,6 +36,14 @@ dataBase = mysql.connector.connect(
 **Passwd** = It is a password for your account; by default, there is no password for the "**root**" user.<br>
 **Database** = Name of the database which you want to connect
 
-## Some basic MySQL query in Python:
+## Some basic MySQL methods in Python:
 
-### 
+### cursor() 
+
+### execute() 
+
+### fetchall()
+
+### close()
+
+
