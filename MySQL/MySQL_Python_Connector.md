@@ -69,8 +69,11 @@ result_output = cur.fetchall() #here "cur" is the name of cursor
 ```
 Details of various types of fetch functions: <br>
 <ul>
-<li> <b>fetchall()</b> = This method returns a list of tuples containing rows from a query result set. If no more rows are available in the query results, it returns an empty list. <br> </li>
+<li> <b>fetchall()</b>:- This method returns a list of tuples containing rows from a query result set. If no more rows are available in the query results, it returns an empty list.</li>
+<li> <b>fetchmany(size=1)</b>:- With this method, you can specify the number of rows to fetch, and the number of rows returned is determined by the <b>"size argument"</b>. Default value of <b>"size argument"</b> is one. </li>
+<li> <b>fetchone()</b>:- This method returns a single row of data, or <b>None</b> if no more rows are available. </li>
 </ul>
+
 
 
 ### close()
