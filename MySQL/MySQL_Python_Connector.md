@@ -9,9 +9,9 @@ So with the **MySQL-Connector**, you can easily do this.
 First, you need to make sure you install the correct version of the software. <br>
 
 ![Version_list](https://user-images.githubusercontent.com/93902835/220734133-7624863e-cbaf-4d7d-ad01-aaa76e56feb8.png)
+<br>You can install a specific version of MySQL-Python Connector using the command given in the [<ins>answer</ins>](https://stackoverflow.com/questions/5226311/installing-specific-package-version-with-pip) on StackOverflow. <br> 
 
-
-It is necessary to have Python and PIP installed on your system in order to install the Python-MySQL-connector module. <br>
+It is **necessary** to have Python and PIP installed on your system in order to install the Python-MySQL-connector module. <br>
 If Python and Pip are not installed, follow the instructions given [<ins>here</ins>](https://www.activestate.com/resources/quick-reads/how-to-install-pip-on-windows/). <br>
 <br>
 If Python and Pip are already installed, run the following commands in the Terminal (CMD).
@@ -40,14 +40,17 @@ Note: Here, "**abc**" is the connection name (or object).  For using different m
 
 ## Some basic MySQL methods in Python:
 
+
 ### cursor() 
 Using the cursor method, you can execute SQL statements.
 
 To create a cursor, use the cursor() method of a connection object:
 ```py
-cur = abc.cursor() #Here "abc" is connection name (or object)
+cur = abc.cursor() #Here "abc" is connection name (or connection object)
                    #And "cur" is cursor name
 ```
+
+
 ### execute() 
 The execute() method runs the SQL query and returns the result.
 
@@ -59,6 +62,8 @@ cur.execute(data) # Here data is the query or command
 cur.execute("Select * from students1") #Here we are selecting all the records from table "students1" 
 #All the fetched records will be stored in the "cur" (cursor name).                                     
 ```
+
+
 ### fetchall()
 The fetchall() method is used to get the returned data from the cursor object ("cur" in our example).
 
@@ -75,7 +80,9 @@ Details of various types of fetch functions: <br>
 </ul>
 
 
-
 ### close()
-
+Once you have finished working with the MySQL connection and cursor, you can close it using close() method.
+```py
+cur.close()#Here, "cur" is cursor name
+```
 
