@@ -59,9 +59,18 @@ cur.execute(data) # Here data is the query or command
 cur.execute("Select * from students1") #Here we are selecting all the records from table "students1" 
 #All the fetched records will be stored in the "cur" (cursor name).                                     
 ```
-
-
 ### fetchall()
+The fetchall() method is used to get the returned data from the cursor object ("cur" in our example).
+
+This method read the query results:
+```py
+result_output = cur.fetchall() #here "cur" is the name of cursor
+# And "result_output" will store list of tuples (rows from result)
+```
+Details of various types of fetch functions: <br>
+<ul>
+<li> <b>fetchall()</b> = This method returns a list of tuples containing rows from a query result set. If no more rows are available in the query results, it returns an empty list. <br> </li>
+</ul>
 
 
 ### close()
