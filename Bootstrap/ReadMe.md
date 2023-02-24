@@ -1,5 +1,7 @@
 # Introduction to Bootstrap
-<img height = 300px align = "center"  src="https://user-images.githubusercontent.com/95307102/221234936-49d587dc-26e1-4f61-b311-f87580ff169d.png"> 
+<p align="center">
+<img height = 300px   src="https://user-images.githubusercontent.com/95307102/221234936-49d587dc-26e1-4f61-b311-f87580ff169d.png"> 
+</p>
 Bootstrap is a set of free and open-source tools for building responsive websites and online apps. 
 It is the most widely used HTML, CSS, and JavaScript framework for creating mobile-first, responsive websites. 
 It resolves numerous issues that we previously encountered, one of which being the cross-browser compatibility issue. 
