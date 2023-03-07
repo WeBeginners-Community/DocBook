@@ -51,28 +51,3 @@ A number literal like 37 in JavaScript code is a floating-point value, not an in
 8. The Number.isSafeInteger() Method : A safe integer is an integer that can be exactly represented as a double precision number.The Number.isSafeInteger() method returns true if the argument is a safe integer.
               Example : Number.isSafeInteger(10);
                         Number.isSafeInteger(12345678901234567890);
-
-
-
-
-                     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

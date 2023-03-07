@@ -48,34 +48,3 @@ const string3 = `Yet another string primitive`;
             Example : text.split(",")    // Split on commas
                       text.split(" ")    // Split on spaces
                       text.split("|")    // Split on pipe
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
