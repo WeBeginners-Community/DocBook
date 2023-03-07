@@ -49,6 +49,9 @@ The state-space diagram is a graphical representation of the set of states our s
 
 The best solution will be a state space where the objective function has a maximum value(global maximum). 
 
+<img src="https://user-images.githubusercontent.com/95307102/223416782-e17ad207-248f-47c2-9008-5d71a7bda66b.png">
+
+
 
 #### Problems in different regions in Hill climbing
 
