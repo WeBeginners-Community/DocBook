@@ -70,3 +70,19 @@ For example:
 print(20 % 6)       //This will output 2
 print(1.25 % 0.5)   //This will output 0.25
 ```
+
+# Libraries in Python
+
+Python has a vast collection of libraries that can be used for a wide range of tasks. 
+
+## Here are some commonly used libraries in Python:
+- NumPy: NumPy is a library for scientific computing that provides support for multi-dimensional arrays, linear algebra, and statistical operations.
+- Pandas: Pandas is a library for data manipulation and analysis. It provides data structures for efficient handling of data, and methods for data cleaning, transformation, and analysis.
+- Matplotlib: Matplotlib is a library for creating static, animated, and interactive visualizations in Python. It provides support for various types of plots, including line, bar, scatter, and pie charts.
+- SciPy: SciPy is a library for scientific computing that builds on top of NumPy. It provides support for optimization, integration, linear algebra, and other scientific tasks.
+- Scikit-learn: Scikit-learn is a library for machine learning in Python. It provides support for various supervised and unsupervised learning algorithms, data preprocessing, and model evaluation.
+- TensorFlow: TensorFlow is a library for machine learning and deep learning in Python. It provides support for building and training neural networks, and supports both CPU and GPU computations.
+- Flask: A lightweight web application framework for Python, providing tools for building web applications and APIs.
+- Django: A high-level web framework for Python, providing a full-stack framework for building web applications.
+
+These are just a few examples of the many libraries available in Python. The Python Package Index (PyPI) is a great resource for discovering and downloading Python libraries.
